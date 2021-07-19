@@ -1,0 +1,241 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+<<<<<<< HEAD
+.home-page {
+  .fixed-menu {
+    position: absolute;
+    top: 39px;
+    width: 100%;
+    z-index: 9999;
+  }
+  .header-navbar {
+    a {
+      color: #ffffff;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// Content Image section css
+.ci-section {
+  padding: 30px 15px 30px 15px;
+
+  &__content {
+    padding-bottom: 20px;
+    > h3 {
+      font-size: 24px;
+      line-height: 33px;
+      font-weight: normal;
+      color: #3a3a3a;
+      span {
+        display: block;
+        > span {
+          display: inline;
+        }
+      }
+    }
+    > p {
+      font-size: 16px;
+      line-height: 22px;
+      color: #616161;
+    }
+    > strong {
+      color: #3a3a3a;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  &__image {
+    position: relative;
+    > figure {
+      img {
+        min-height: 210px;
+      }
+    }
+    &__overlay {
+      bottom: 25px;
+      left: 35px;
+      position: absolute;
+      width: 80%;
+      > p {
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 1.5em;
+        text-shadow: 1px 1px black;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ci-section {
+    &__content {
+      > h3 {
+        font-size: 28px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+// Ends
+
+// Background Overlay section css
+.bo-section {
+  padding: 30px 0;
+  &__top {
+    padding: 0 15px;
+    h3 {
+      font-size: 30px;
+      line-height: 41px;
+      text-transform: uppercase;
+      color: #313131;
+    }
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      color: #616161;
+    }
+  }
+  &__image {
+    position: relative;
+    button {
+      position: absolute;
+      left: 5%;
+      top: 10%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+// Ends
+
+// Image and Tags section css
+.it-section {
+  padding: 30px 15px;
+
+  &__top {
+    h3 {
+      font-size: 30px;
+      line-height: 41px;
+      text-transform: uppercase;
+      color: #313131;
+    }
+  }
+  &__tags {
+    padding: 10px 0;
+    li {
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 0 5px 10px 0;
+      font-size: 16px;
+      line-height: 19px;
+      border-radius: 20px;
+      &:hover,
+      &:focus {
+        color: #ea725b;
+        background: rgba(145, 145, 145, 0.08);
+      }
+    }
+
+    &--active {
+      color: #ea725b;
+      background: rgba(145, 145, 145, 0.08);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+// Ends
+
+// Newsletter section css
+.newsletter-section {
+  padding: 30px 15px;
+  &__top {
+    h3 {
+      font-size: 30px;
+      line-height: 38px;
+      text-transform: uppercase;
+      color: #313131;
+      strong {
+        display: inline-block;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 19px;
+      color: #616161;
+    }
+  }
+
+  &__form {
+    &__input-group {
+      display: flex;
+      background: #ffffff;
+      border: 1px solid #c4c4c4;
+      box-sizing: border-box;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 2px;
+      input {
+        width: 100%;
+        outline: 0;
+        padding: 10px 15px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #8b8b8b;
+      }
+      button {
+        background: #ea725b;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        color: white;
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+// Ends
+
+// Overlay card section css
+.oc-section {
+  padding: 30px 15px;
+  &__vertical-align {
+    &__card {
+      position: relative;
+      margin-bottom: 16px;
+      &__content {
+        position: absolute;
+        bottom: 8%;
+        left: 8%;
+        width: 70%;
+        z-index: 1;
+        h5 {
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 24px;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+        p {
+          font-size: 14px;
+          line-height: 19px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+=======
+>>>>>>> master

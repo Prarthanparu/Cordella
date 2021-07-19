@@ -1,0 +1,32 @@
+.actionBtn {
+    padding: 20px 15px;
+ }
+ 
+ .customScroll {
+   /* display: none; */
+ 
+   ::-webkit-scrollbar {
+     width: 10px;
+   }
+ 
+   /* Track */
+   ::-webkit-scrollbar-track {
+     // box-shadow: inset 0 0 5px grey;
+     // background: lighten(rgb(80, 14, 75), 2%);
+     border-radius: 10px;
+   }
+ 
+   /* Handle */
+   ::-webkit-scrollbar-thumb {
+     // background: darken(rgb(80, 14, 75), 4%);
+     background: white;
+     border-radius: 10px;
+   }
+ 
+   /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+     // background: darken(rgb(80, 14, 75), 3%);
+ 
+   }
+ }
+ 

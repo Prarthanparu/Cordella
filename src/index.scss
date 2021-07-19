@@ -1,0 +1,102 @@
+@import "~antd/dist/antd.css";
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("/assets/fonts/roboto/Roboto-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-BlackItalic";
+  src: url("/assets/fonts/roboto/Roboto-BlackItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/assets/fonts/roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-BoldItalic";
+  src: url("/assets/fonts/roboto/Roboto-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Italic";
+  src: url("/assets/fonts/roboto/Roboto-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("/assets/fonts/roboto/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-LightItalic";
+  src: url("/assets/fonts/roboto/Roboto-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("/assets/fonts/roboto/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-MediumItalic";
+  src: url("/assets/fonts/roboto/Roboto-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/assets/fonts/roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("/assets/fonts/roboto/Roboto-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-ThinItalic";
+  src: url("/assets/fonts/roboto/Roboto-ThinItalic.ttf") format("truetype");
+}
+
+* {
+  font-family: "Roboto-Regular";
+}
+
+.slick-prev {
+  display: block;
+  position: absolute !important;
+  top: unset !important;
+  left: 0px !important;
+  font-size: unset !important;
+  line-height: unset !important;
+  padding: 0 !important;
+  width: unset !important;
+  height: unset !important;
+  transform: unset !important;
+  color: unset !important;
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+}
+.slick-next {
+  display: block;
+  position: absolute !important;
+  top: unset !important;
+  right: 0 !important;
+  font-size: unset !important;
+  line-height: unset !important;
+  padding: 0 !important;
+  width: unset !important;
+  height: unset !important;
+  transform: unset !important;
+  color: unset !important;
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+}
+
+.margin-top-sm {
+  margin-top: 8px;
+}

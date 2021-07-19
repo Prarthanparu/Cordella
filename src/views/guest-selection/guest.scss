@@ -1,0 +1,179 @@
+.btn-modify {
+    padding: 7px 18px;
+    font-size: 16px;
+    font-weight: 400;
+    height: auto;
+    border-radius: 5px;
+}
+.arrow-left-btn {
+    padding: 3px 9px 8px;
+    font-size: 21px;
+    border-radius: 5px;
+    height: auto;
+    line-height: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#progressbar {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    padding-left: 0px;
+}
+#progressbar li {
+    list-style-type: none;
+    color: rgb(51, 51, 51);
+    font-size: 9px;
+    width: 33.3%;
+    float: left;
+    position: relative;
+}
+#progressbar li:before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    display: block;
+    background: #838383;
+    border-radius: 50%;
+    margin: 0 auto 5px auto;
+}
+#progressbar li .stepfill {
+    transform: translateY(-40px);
+}
+#progressbar li .step--comn {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #838383;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+#progressbar li .step-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #838383;
+    line-height: normal;
+}
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: #EEE;
+    position: absolute;
+    left: -50%;
+    top: 4px;
+    z-index: -1;
+}
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none; 
+}
+
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #EA725B;
+    color: white;
+}
+
+/*----------------------------------page create----------------------------------------*/
+.title--main {
+    font-size: 24px;
+    font-weight: 600;
+    color: #313131;
+}
+.cabin-boxgrid {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px #0000000d;
+    border-radius: 5px;
+    padding: 10px 15px;
+    position: relative;
+    padding-right: 50px;
+    min-height: 110px;
+    margin-bottom: 20px;
+}
+.title-cabin {
+    font-size: 18px;
+    font-weight: 600;
+    color: #313131;
+}
+.guest--view{
+    font-size: 14px;
+    font-weight: 400;
+    color: #313131;
+    display: block;
+}
+.delticon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.btn-delt {
+    padding: 0;
+}
+
+/*-----------------------------------------------------*/
+.small--title {
+    font-size: 16px;
+    font-weight: 600;
+}
+.small--title {
+    font-size: 16px;
+    font-weight: 600;
+}
+.form-control-num {
+    width: 100%;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    height: 36px;
+    padding: 8px;
+}
+.numcontrol--v {
+    flex: 0 0 50px;
+    max-width: 50px;
+    border-right: 1px solid #ced4da;
+}
+.btn-choose-btn {
+    background: #EA725B;
+    color: #fff;
+    border-radius: 5px;
+    padding: 7px 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 991px) {
+    #progressbar{
+        margin-top: 50px;
+    }
+}

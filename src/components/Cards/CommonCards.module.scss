@@ -1,0 +1,104 @@
+.textCard {
+  border: none;
+  text-align: left;
+}
+
+.imgCard {
+  border: none;
+}
+
+.textCard h6 {
+  font-size: 30px;
+  font-weight: 700;
+  color: "#313131";
+  text-align: left;
+}
+
+.TextOverImageBackground {
+  background: url("../../assets/img/cruise-transparent.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 760px;
+  padding: 74px;
+}
+
+.TextOverImageText {
+  color: #919191;
+}
+
+.MovingTextCardBackground {
+  background-image: url("../../assets/img/footer_vector_mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  // padding: 104px 74px 0px 74px;
+}
+
+.MovingTextCardText {
+  color: #919191;
+}
+
+.MovingTextCardImageSection {
+  background: url("../../assets/img/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 384px;
+}
+
+.MovingTextCardImageSectionText {
+  position: absolute;
+  bottom: 0;
+  padding: 32px;
+}
+
+.FeatureCardsBackground {
+  padding: 0 74px 74px 74px;
+}
+
+.TagCardsBackground {
+  padding: 74px;
+}
+
+.TagCardImageSection {
+  background: url("../../assets/img/sample_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 322px;
+}
+
+.TagCardTextSection {
+  margin: 0px;
+}
+
+.ImageTextOverlayCardsBackground {
+  padding: 74px 74px 0px 74px;
+}
+
+.NewsLetterCardBackground {
+  padding: 0px 74px 74px 74px;
+}
+
+.BannerCarouselBackground {
+  padding: 0px 74px 0px 74px;
+}
+
+.TopEverythingBackground {
+  padding: 0 74px 74px 74px;
+}
+
+.TravelItineraryCardsBackground {
+  // padding: 0 74px 0px 74px;
+}
+
+.FilterSectionBackground {
+  height: 24px;
+  padding: 74px 74px 0px 74px;
+}
+
+.FilterNightTags {
+  text-align: left;
+}
+
+.FilterSortSection {
+  text-align: right;
+}

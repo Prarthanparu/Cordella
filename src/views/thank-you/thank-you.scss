@@ -1,0 +1,439 @@
+.thankyou--pg {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.title-fst {
+    font-size: 38px;
+    font-weight: 700;
+    color: #313131;
+}
+.sub-title-scnd {
+    font-size: 30px;
+    font-weight: 700;
+    color: #00C14D;
+}
+.sub-title-scnd img {
+    margin-right: 15px;
+}
+.booking-id {
+    font-size: 22px;
+    font-weight: 400;
+    color: #616161;
+    display: block;
+}
+.booking-id span {
+    color: #500E4B;
+}
+.inform--ticket {
+    font-size: 18px;
+    font-weight: 400;
+    color: #616161;
+}
+.cardtnk-bg{
+    background: #FBFBFB;
+    box-shadow: none;
+}
+.full-card--section {
+    margin-bottom: 100px;
+}
+.card-title-main {
+    background-color: #500E4B;
+    padding: 10px 50px;
+    border-radius: 0px !important;
+}
+.title-card-heading {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+.rowbody--card {
+    padding: 30px 70px 0px;
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.card-detail-grid-box {
+    margin-bottom: 30px;
+}
+.detial--title-activity {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #848484;
+}
+.interior--box-card {
+    padding: 10px 10px 13px;
+    border: 0.5px solid #0000001a;
+}
+.interior--box-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+.thankyou--cabin-img {
+    flex: 0 0 185px;
+    max-width: 185px;
+}
+.thankyou--cabin-img .Img--room {
+    width: 100%;
+}
+.thnk--dtl-info {
+    flex: 1;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.interior--title {
+    color: #500E4B;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.room-viewtxt .cmn--txt--room {
+    font-size: 14px;
+    font-weight: 600;
+    color: #3A3A3A;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 1px solid #848484;
+    line-height: normal;
+}
+.room-viewtxt .cmn--txt--room:last-child{
+    border-right: none;
+}
+.room-tottal-gst .spn--totl-gst{
+    font-size: 14px;
+    font-weight: 600;
+    color: #3A3A3A;
+    display: inline-block;
+}
+.room-tottal-gst span{
+    font-weight: 400;
+}
+.listcard--nameview {
+    padding-left: 0;
+    list-style: none;
+}
+.listcard--nameview .tt-list--itemsmain {
+    color: #500E4B;
+    font-size: 14px;
+    line-height: normal;
+}
+.short--disc-thanky {
+    margin-top: 15px;
+}
+.short--disc-thanky p{
+    margin-bottom: 0px;
+}
+.short--disc-thanky p {
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #535353;
+}
+.title-txt-cancwl, .title--sumry-paymnt{
+    font-size: 16px;
+    font-weight: 400;
+    color: #848484;
+    margin-bottom: 15px;
+}
+.items--cancel--list {
+    padding-left: 15px;
+}
+.items--cancel--list li {
+    font-size: 14px;
+    font-weight: 400;
+    color: #3A3A3A;
+}
+.btn-more-dtl {
+    text-decoration: underline;
+}
+.payment-sumary-list {
+    padding-left: 0;
+    list-style: none;
+}
+.payment-sumary-list .payment-sumary-td {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 28px;
+}
+.payment-sumary-td .payment-title-sum {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 400;
+    color: #3A3A3A;
+}
+.payment-sumary-td .payment-title-sum-2 {
+    text-align: right;
+    font-weight: 600;
+}
+.sumry-discount .payment-title-sum {
+    color: #3D7738;
+}
+.total-amt-sumry .payment-title-sum {
+    font-size: 16px;
+    font-weight: 600;
+}
+.summary-loaction-col {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.txt--local--sum {
+    margin-bottom: 15px;
+}
+.statehead--local {
+    color: #500E4B;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+.txt--local--sum .city--localhead {
+    font-size: 12px;
+    font-weight: 400;
+    color: #535353;
+}
+.bottom-timeorder h4 span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3A3A3A;
+    display: block;
+}
+.txt--col--viewmain {
+    font-size: 14px;
+    font-weight: 400;
+    color: #535353;
+    padding: 0px 35px;
+}
+.order--locatin-ship {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.Img--iconShip {
+    text-align: center;
+    position: relative;
+}
+.Img--iconShip::before {
+    width: 100%;
+    display: block;
+    content: "";
+    border-bottom: 1px dashed #848484;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.Img--iconShip img {
+    background-color: #FBFBFB;
+    padding: 0px 20px;
+    position: relative;
+}
+.ship--icon-middle .in-out--ship {
+    display: block;
+    font-size: 14px;
+    color: #848484;
+    text-align: center;
+    margin-top: 20px;
+}
+.halting--port-last p {
+    text-align: center;
+    font-size: 14px;
+    color: #3A3A3A;
+    margin-bottom: 0;
+}
+.halting--port-last p span {
+    display: inline-block;
+    border-right: 1px solid #848484;
+    line-height: normal;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+.halting--port-last p span:last-child{
+    border-right: 0px;
+}
+.thank-you-btn span {
+    display: inline-block;
+}
+.btn--choose {
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #EA725B;
+    padding: 11px 27px;
+    line-height: normal;
+    color: #EA725B;
+}
+.btn--choose:hover{
+    color: #EA725B;
+}
+.btn--webcheck {
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #EA725B;
+    border: 1px solid #EA725B;
+    padding: 11px 32px;
+    line-height: normal;
+    color: #fff;
+}
+.btn--webcheck:hover{
+    color: #fff;
+}
+
+/*------------------------------------------*/
+@media only screen and (max-width: 1199px) {
+    .rowbody--card {
+        padding: 30px 35px 0px;
+    }
+    .thnk--dtl-info {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .thankyou--cabin-img {
+        flex: 0 0 150px;
+        max-width: 150px;
+    }
+    .ship--icon-middle {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .txt--col--viewmain{
+        padding: 0px 10px;
+    }
+
+}
+@media only screen and (max-width: 991px) {
+    .thankyou--cabin-img {
+        flex: 0 0 185px;
+        max-width: 185px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .thankyou--pg {
+        padding-top: 30px;
+    }
+    .title-fst {
+        font-size: 24px;
+    }
+    .sub-title-scnd {
+        font-size: 17px;
+    }
+    .sub-title-scnd img {
+        width: 17px;
+        margin-right: 5px;
+    }
+    .booking-id {
+        font-size: 14px;
+    }
+    .inform--ticket {
+        font-size: 14px;
+    }
+    .card-title-main {
+        padding: 10px 15px;
+    }
+    .rowbody--card {
+        padding: 30px 0px 0px;
+    }
+    .bottom-timeorder h4 span {
+        font-size: 17px;
+    }
+    .thankyou--cabin-img {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    .thnk--dtl-info {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+}
+@media only screen and (max-width: 375px) {
+    .thank-you-btn span {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

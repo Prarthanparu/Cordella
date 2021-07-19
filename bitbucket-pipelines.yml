@@ -1,0 +1,27 @@
+image: node:12.22.2
+pipelines:
+    branches:
+        develop:
+            - step:
+                name: Build App
+                script:
+                    - unset CI 
+                    - npm install
+                    - ls
+                    - npm run build
+                    - mkdir packaged
+                    - tar -czvf packaged/package-${BITBUCKET_BUILD_NUMBER}.tar.gz -C build .
+                artifacts:
+                    - packaged/**
+            - step:
+                name: Deploy to test
+                image: atlassian/default-image:latest
+                deployment: test
+                script:
+                    - mkdir upload
+                    - tar -xf packaged/package-${BITBUCKET_BUILD_NUMBER}.tar.gz -C upload 
+                    - rsync -a --delete upload/ $USERNAME@$SERVER:/home/deploy/b2crevamp-${BITBUCKET_BUILD_NUMBER}
+                    - ssh $USERNAME@$SERVER "rm -r '/home/deploy/cordelia_frontend_b2c'"
+                    - ssh $USERNAME@$SERVER "mv '/home/deploy/b2crevamp-${BITBUCKET_BUILD_NUMBER}' '/home/deploy/cordelia_frontend_b2c'"
+                artifacts:
+                    - upload/**

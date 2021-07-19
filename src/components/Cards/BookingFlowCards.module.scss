@@ -1,0 +1,139 @@
+$primary-text-color: #313131;
+$secondary-text-color: #616161;
+
+.bookingSummary {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  margin-bottom: 50px;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: $primary-text-color;
+}
+
+.sectionHeading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  text-transform: capitalize;
+  color: $secondary-text-color;
+}
+
+@media (max-width: 768px) {
+  .sectionHeading {
+    margin-top: 20px;
+  }
+}
+
+.secondaryText {
+  color: $secondary-text-color;
+}
+
+.primaryText {
+  color: $primary-text-color;
+}
+
+.cardContent {
+  padding: 20px 40px;
+}
+
+.priceDetail,
+.billingDetail {
+  .section:not(:first-child) {
+    margin-top: 20px;
+  }
+  .sectionRow {
+    display: flex;
+    span {
+      display: block;
+      width: 50%;
+    }
+    span:last-child {
+      text-align: right;
+    }
+  }
+  .label {
+    font-size: 16px !important;
+  }
+  .heading {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+  }
+  .subHeading {
+    color: $secondary-text-color;
+    font-size: 16px;
+  }
+  .cardFooter {
+    display: flex;
+    background-color: rgba(234, 114, 91, 0.2);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: capitalize;
+    border-radius: 0px 0px 5px 5px;
+    div {
+      width: 50%;
+      margin: 10px 40px;
+    }
+    div:last-child {
+      text-align: right;
+    }
+  }
+
+  .formGroup {
+    max-width: 70%;
+    margin-top: 0.5rem;
+    .inputAppendBtn {
+      border-radius: 0px 5px 5px 0px;
+      span {
+        background-color: #ea725b;
+        color: white;
+      }
+    }
+  }
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+}
+
+.bookingDetail {
+  height: 100%;
+}
+
+.paymentDetailFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #616161;
+  border-top: 1px solid #616161;
+  padding-top: 0.7rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.dashed {
+  border-top: 1px solid dashed !important;
+}

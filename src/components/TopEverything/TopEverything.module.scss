@@ -1,0 +1,20 @@
+.topCorners h6 {
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: 700;
+    border-bottom: 1px solid #919191;
+  }
+
+.topCorners ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .topCorners li a{
+    color: #919191;
+  }
+  .topCorners li a:hover{
+    color: #EA725B;
+    text-decoration: underline;
+  }

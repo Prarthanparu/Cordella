@@ -1,0 +1,219 @@
+.btn-modify {
+    padding: 7px 18px;
+    font-size: 16px;
+    font-weight: 400;
+    height: auto;
+    border-radius: 5px;
+}
+.arrow-left-btn {
+    padding: 3px 9px 8px;
+    font-size: 21px;
+    border-radius: 5px;
+    height: auto;
+    line-height: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#progressbar {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+#progressbar li {
+    list-style-type: none;
+    color: rgb(51, 51, 51);
+    font-size: 9px;
+    width: 33.3%;
+    float: left;
+    position: relative;
+}
+#progressbar li:before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    display: block;
+    background: #838383;
+    border-radius: 50%;
+    margin: 0 auto 5px auto;
+}
+#progressbar li .stepfill {
+    transform: translateY(-40px);
+}
+#progressbar li .step--comn {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #838383;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+#progressbar li .step-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #838383;
+    line-height: normal;
+}
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: #EEE;
+    position: absolute;
+    left: -50%;
+    top: 4px;
+    z-index: -1;
+}
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none; 
+}
+
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #EA725B;
+    color: white;
+}
+
+/*----------------------------------page create----------------------------------------*/
+.title--main {
+    font-size: 24px;
+    font-weight: 600;
+    color: #313131;
+}
+.cabin-boxgrid {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px #0000000d;
+    border-radius: 5px;
+    padding: 10px 15px;
+    position: relative;
+    padding-right: 50px;
+    min-height: 110px;
+    margin-bottom: 20px;
+}
+.title-cabin {
+    font-size: 18px;
+    font-weight: 600;
+    color: #313131;
+}
+.guest--view{
+    font-size: 14px;
+    font-weight: 400;
+    color: #313131;
+}
+.delticon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.btn-delt {
+    padding: 0;
+}
+.cabinadd--field p {
+    color: #535353;
+    font-size: 14px;
+}
+.listMore--items--vat ul {
+    padding-left: 0px;
+    list-style: none;
+}
+.listMore--items--vat ul li {
+    margin-bottom: 10px;
+}
+.widgit--guest--list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.iconbutton-comn {
+    flex: 0 0 45px;
+    max-width: 45px;
+}
+.items--filltxt {
+    flex: 1;
+    max-width: 100%;
+    padding: 0px 15px;
+    text-align: center;
+}
+.iconbutton-comn button {
+    background: #C4C4C4;
+    width: 45px;
+    height: 45px;
+}
+.iconbutton-comn .btn-plus{
+    background: #EA725B;
+}
+.items--filltxt span {
+    display: block;
+}
+.items--filltxt .fst-txtnv{
+    font-size: 16px;
+    color: #3a3a3a;
+}
+.items--filltxt .adultxt{
+    font-size: 14px;
+}
+.items--filltxt .scnd-txtnv{
+    font-size: 10px;
+    color: #A8A8A8;
+
+}
+.listMore--items--vat p {
+    margin-bottom: 0;
+}
+
+
+.add-cabin{
+        /* position: absolute; */
+        width: 150px;
+        height: 35.29px;
+        left: 1189px;
+        top: 337px;
+        border: 1px solid #EA725B;
+        box-sizing: border-box;
+        border-radius: 5px;
+        color: #EA725B;
+}
+.booknow--bannerImg img {
+    height: 100%;
+}
+
+
+@media screen and (max-width: 1199px) {
+    .booknow--bannerImg img {
+        height: auto;
+    }
+}
+@media screen and (max-width: 992px) {
+    .booknow--bannerImg {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .btn-card--bth {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+

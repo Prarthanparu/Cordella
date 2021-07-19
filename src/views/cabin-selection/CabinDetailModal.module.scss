@@ -1,0 +1,102 @@
+.header {
+  background-color: #500e4b;
+  color: white;
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px 5px 0px 0px;
+  align-items: center;
+  & div {
+    flex-grow: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+.crossIcon {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    color: black;
+  }
+}
+
+.modalBody {
+}
+
+.nameSection {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-around;
+}
+
+.cabinName {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.arrowBtn {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  border-radius: 5px;
+}
+
+.content {
+  padding: 1.8rem 1.8rem 0rem 1.8rem;
+}
+
+.subHeading {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.subContent {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 0rem;
+  div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.icon {
+  padding-right: 0.5rem;
+}
+
+.priceSection {
+  display: flex;
+  border-top: 1px solid #616161;
+  border-bottom: 1px solid #616161;
+  justify-content: space-between;
+  padding: 0.8rem 0rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  min-width: 6rem;
+  justify-content: space-around;
+}
+
+.carousel {
+  height: 176px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide {
+  height: 176px;
+  width: 49%;
+  background-color: #616161;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,75 @@
+module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
+  purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        "j-black": "#000000",
+        "j-gray": "#666666",
+        "j-gray-light": "#999999",
+        "j-gray-lighter": "#CCCCCC",
+        "j-ghostwhite": "#EFEFEF",
+        "j-white": "#FFFFFF",
+        "j-red": "#820C09",
+        "j-red-live": "#C1422A",
+        "j-red-light": "#AA432F",
+        "j-orange": "#EA725B",
+        "j-yellow": "#FFD800",
+        "j-magenta": "#500E4B",
+        "j-blue-dark": "#1D1D1F",
+        "j-blue": "#1C5771",
+        "j-blue-vibrant": "#1376A1",
+        "j-blue-light": "#BBC6D5",
+        "j-blue-lighter": "#F0F4F9",
+        "j-green": "#378649",
+        "j-green-light": "#9AA32B",
+        "j-gray-newlight": "#8F8F8F",
+        "j-gray-coorporate": "#616161",
+        "j-gray-new": "#818181",
+        "j-black-new": "#313131",
+        
+      },
+      lineHeight: {
+        tiny: "1.125rem",
+        11: "3rem",
+        extreme: "4.5rem",
+      },
+
+      fontSize: {
+        tiny: "0.625rem",
+        huge: "2rem",
+        biggest: "2.5rem",
+        gigantic: "5.625rem",
+        "4xl": "2.375rem",
+      },
+      spacing: {
+        7: "1.75rem",
+        9: "2.125rem",
+        13: "3.25rem",
+        14: "3.5rem",
+        15: "3.75rem",
+        19: "4.75rem",
+        128: "28rem",
+      },
+      borderRadius: {
+        tiny: "0.1875rem",
+        small: "0.3125rem",
+        big: "0.625rem",
+        huge: "3.125rem",
+      },
+      boxShadow: {
+        error: "0 0 6px #820C09",
+        tile: "0 3px 6px #00000029",
+        "tile-huge": "0px 15px 30px #00000029",
+      },
+    },
+  },
+  variants: {
+    borderColor: ["responsive", "hover", "focus", "focus-within"],
+    textColor: ["responsive", "hover", "focus", "focus-within"],
+    backgroundColor: ['active'],
+  },
+  plugins: [],
+};

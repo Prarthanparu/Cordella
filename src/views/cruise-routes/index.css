@@ -1,0 +1,131 @@
+.ant-picker-suffix {
+  display: none !important;
+}
+.find-cruise-title .ant-card-meta-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #313131;
+  line-height: normal;
+}
+.find-cruise-title .ant-card-meta-description {
+  font-size: 24px;
+  font-weight: 400;
+  color: #616161;
+}
+.portrow-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portrow-grid .portflex-port {
+  font-size: 16px;
+  font-weight: 600;
+  color: #616161;
+  margin-right: 24px;
+}
+.portgrid--arealist {
+  flex: 1;
+  max-width: 100%;
+}
+.portlocation-main .listrout--port {
+  display: inline-flex;
+  padding-right: 15px;
+  margin-right: 8px;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 600;
+}
+.dateCruise--btnmore {
+  list-style: none;
+  padding: 0px;
+}
+.dateCruise--btnmore .btnmore--Itemdate {
+  display: inline-block;
+}
+.view--all--datebtn .route-btn-btn {
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+} 
+.rightSide--RouteBody .card-body{
+  padding: 30px;
+}
+.TravelCard--listgrid .TravelItineraryCard_container__axv1C {
+  grid-template-columns: 33% 67%;
+}
+.TravelCard--listgrid {
+  margin: 0px 0px 30px;
+}
+.filter---flex-view {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.filterBy {
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  padding-right: 15px;
+}
+.filterBy span {
+  vertical-align: middle;
+}
+.filterSelect--listCheck {
+  flex: 1;
+}
+.filterSelect--listCheck .ant-tag {
+  font-size: 16px;
+  color: #313131;
+  display: inline-block;
+  margin: 0px 10px;
+  padding: 4px 15px;
+  border-radius: 30px;
+}
+.filterSelect--listCheck .ant-tag .anticon-close {
+  font-size: 13px;
+  vertical-align: middle;
+}
+.filterSelect--listCheck .ant-tag.ant-tag-checkable-checked {
+  color: #EA725B;
+  background: #91919114;
+}
+.shortFilter--main .CommonCards_FilterSortSection__2idhr {
+  text-align: left;
+  margin-top: 10px;
+}
+.shortFilter--main .ant-dropdown-link {
+  font-size: 18px;
+  font-weight: 600;
+}
+.bookingnow---routin--save .TravelItineraryCard_bookItineraryWrapper__3o2Xh {
+  justify-content: flex-end;
+}
+.explore--intery {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+.selectedCabin {
+  padding: 20px;
+  max-width: calc(100vw - 2rem);
+  height: 100%;
+}
+
+.heading {
+  display: flex;
+}
+
+.headingText {
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 28px;
+  text-transform: uppercase;
+  flex-grow: 1;
+  color: #313131;
+}
+
+.deleteIcon {
+  font-size: 2rem;
+  color: #ea725b;
+  cursor: pointer;
+}
+
+.deleteIcon:hover,
+.deleteIcon:focus {
+  color: #f79e88;
+}
+
+.subHeading {
+  color: #616161;
+  font-size: 14px;
+}

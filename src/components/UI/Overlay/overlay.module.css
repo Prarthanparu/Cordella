@@ -1,0 +1,13 @@
+.filter-modal {
+    width: 32%;
+    left: 34%;
+    z-index: 999999;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .filter-modal {
+      width: 90%;
+      left: 5%;
+      z-index: 999999;
+    }
+}

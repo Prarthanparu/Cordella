@@ -1,0 +1,56 @@
+.site-layout-content {
+  min-height: 280px;
+  padding: 24px;
+  background: #fff;
+}
+
+#components-layout-demo-top .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.ant-row-rtl #components-layout-demo-top .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+
+.ant-card-body {
+  padding: unset;
+}
+.ant-form-item {
+  margin-right: 0px !important;
+}
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: #ea725b !important;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.slick-dots li button::before {
+  color: unset !important;
+}
+.slick-dots li.slick-active button::before {
+  font-size: 12px !important;
+}
+a {
+  color: #ea725b;
+}
+.ant-tag-checkable-checked {
+  background: rgba(145, 145, 145, 0.08);
+  padding: 10px 40px;
+  border-radius: 20px;
+  color: #ea725b;
+}
+.TravelItineraryCard {
+  margin: 74px 0;
+}

@@ -1,0 +1,111 @@
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 25% 75%;
+  }
+  .carousel {
+    height: 400px !important;
+  }
+}
+
+.portName {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #616161;
+}
+
+.travelPortsList {
+  .travelPortsListItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    border-right: 1px solid #616161;
+    &:last-of-type {
+      border: none;
+    }
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+
+.dateSection {
+  text-transform: uppercase;
+  .cruseDateHeading {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #616161;
+  }
+
+  button {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    &:hover,
+    &.selected {
+      background-color: #500e4b;
+      border-color: #500e4b;
+      color: white;
+    }
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+
+.offerSection {
+  color: #616161;
+  display: flex;
+  align-items: center;
+}
+
+.bookItineraryWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  button {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+  }
+}
+
+.documentSection {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.priceDetailWrapper {
+  color: #616161;
+  margin: 1.5rem 0rem 2.5rem 0rem;
+  .priceDetail {
+    display: flex;
+    align-items: baseline;
+    .price {
+      margin: 0px;
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .priceDetailWrapper {
+    .priceDetail {
+      .price {
+        font-size: 28px;
+      }
+    }
+  }
+}
