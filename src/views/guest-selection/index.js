@@ -7,9 +7,42 @@ import BedIcon from "../../assets/img/bed-icon.svg";
 import Minus from "../../assets/img/minus.svg";
 import Plus from "../../assets/img/plus.svg";
 import "./guest.scss";
+import React,{useState} from "react";
+import Axios from "axios";
 
 
 function RoomSelection() {
+   const url="https://cordelia.fortelogic.in/api/bookings";
+
+    const [data,setData] = useState({
+        firstName:" ",
+        lastName:" ",
+        gender:" ",
+        date:" ",
+        mobile:" ",
+        email:" ",
+    })
+
+    const handle =(e)=>{
+        const newData = {...data};
+        newData[e.target.id]=e.target.value;
+        setData(newData);
+        console.log(newData);
+    }
+    const submit =(e)=>{
+        e.preventDefault();
+        Axios.post(url,{
+            firstName:data.firstName,
+            lastName:data.lastName,
+            gender:data.gender,
+            date:data.date,
+            mobile:parseInt(data.mobile),
+            email:data.email
+        })
+        .then(res =>{
+            console.log(res.data);
+        })
+    }
   return (
     <div className="Home">
       <Header />
@@ -79,20 +112,20 @@ function RoomSelection() {
                 <Card>
                   <div className="card-body">
                     <div className="formcard--cabin">
-                      <h4 className="small--title mb-3">Guest 1: <span>Adult</span></h4>
+                      <h4 className="small--title mb-3">Guest 2: <span>Adult</span></h4>
                       <div className="">
                         <form className="">
                           <div className="form-group form-row mb-0">
                             <div class="col-12 col-md-6 mb-3">
-                              <input type="text" placeholder="First Name" className="form-control" />
+                              <input onChange={(e)=>handle(e)} id="firstName" value={data.firstName} type="text" placeholder="First Name" className="form-control" />
                             </div>
                             <div class="col-12 col-md-6 mb-3">
-                              <input type="text" placeholder="Last Name" className="form-control" />
+                              <input onChange={(e)=>handle(e)} id="lastName" value={data.lastName} type="text" placeholder="Last Name" className="form-control" />
                             </div>
                           </div>
                           <div className="form-group form-row">
                             <div class="col-12">
-                              <select className="form-control">
+                              <select onChange={(e)=>handle(e)} id="gender" value={data.gender} className="form-control">
                                 <option>Select your Gender</option>
                                 <option>1</option>
                               </select>
@@ -100,20 +133,20 @@ function RoomSelection() {
                           </div>
                           <div className="form-group form-row">
                             <div class="col-12">
-                              <input type="date" placeholder="" className="form-control" />
+                              <input onChange={(e)=>handle(e)} id="date" value={data.date} type="date" placeholder="" className="form-control" />
                             </div>
                           </div>
                           <div className="form-group form-row">
                             <div class="col-12">
                               <div className="d-flex number--txt form-control p-0">
                                 <input type="text" placeholder="+91" className="form-control-num numcontrol--v" />
-                                <input type="text" placeholder="10 Digit Mobile Number" className="form-control-num" />
+                                <input onChange={(e)=>handle(e)} id="mobile" value={data.mobile} type="text" placeholder="10 Digit Mobile Number" className="form-control-num" />
                               </div>
                             </div>
                           </div>
                           <div className="form-group form-row">
                             <div class="col-12">
-                              <input type="email" placeholder="Email Address" className="form-control" />
+                              <input onChange={(e)=>handle(e)} id="email" value={data.email} type="email" placeholder="Email Address" className="form-control" />
                             </div>
                           </div>
                         </form>
@@ -131,15 +164,15 @@ function RoomSelection() {
                         <form className="">
                           <div className="form-group form-row mb-0">
                             <div class="col-12 col-md-6 mb-3">
-                              <input type="text" placeholder="First Name" className="form-control" />
+                              <input onChange={(e)=>handle(e)} id="firstName" value={data.firstName} type="text" placeholder="First Name" className="form-control" />
                             </div>
                             <div class="col-12 col-md-6 mb-3">
-                              <input type="text" placeholder="Last Name" className="form-control" />
+                              <input onChange={(e)=>handle(e)} id="lastName" value={data.lastName} type="text" placeholder="Last Name" className="form-control" />
                             </div>
                           </div>
                           <div className="form-group form-row">
                             <div class="col-12">
-                              <select className="form-control">
+                              <select onChange={(e)=>handle(e)} id="gender" value={data.gender} className="form-control">
                                 <option>Select your Gender</option>
                                 <option>1</option>
                               </select>
@@ -147,20 +180,20 @@ function RoomSelection() {
                           </div>
                           <div className="form-group form-row">
                             <div class="col-12">
-                              <input type="date" placeholder="" className="form-control" />
+                              <input onChange={(e)=>handle(e)} id="date" value={data.date} type="date" placeholder="" className="form-control" />
                             </div>
                           </div>
                           <div className="form-group form-row">
                             <div class="col-12">
                               <div className="d-flex number--txt form-control p-0">
                                 <input type="text" placeholder="+91" className="form-control-num numcontrol--v" />
-                                <input type="text" placeholder="10 Digit Mobile Number" className="form-control-num" />
+                                <input onChange={(e)=>handle(e)} id="mobile" value={data.mobile} type="text" placeholder="10 Digit Mobile Number" className="form-control-num" />
                               </div>
                             </div>
                           </div>
                           <div className="form-group form-row">
                             <div class="col-12">
-                              <input type="email" placeholder="Email Address" className="form-control" />
+                              <input onChange={(e)=>handle(e)} id="email" value={data.email} type="email" placeholder="Email Address" className="form-control" />
                             </div>
                           </div>
                         </form>
@@ -217,10 +250,10 @@ function RoomSelection() {
                 </Card>
               </div>
             </div>
-            <div className="row my-5">
+            <div   className="row my-5">
               <div className="col-12">
                 <div className="choose-addon text-center">
-                  <button className="btn btn-choose-btn">Choose Add-On</button>
+                  <button onSubmit={(e)=> submit(e)} className="btn btn-choose-btn">Choose Add-On</button>
                 </div>
               </div>
             </div>

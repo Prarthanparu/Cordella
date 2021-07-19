@@ -5,55 +5,27 @@ import Axios from 'axios';
 
 function Guests() {
 
-    const url="https://cordelia.fortelogic.in/api/bookings";
-
-    const [data,setData] = useState({
-        card:" ",
-        cardNumber:" ",
-        state:" ",
-        country:" ",
-        mealType:" "
-    })
-
-    const handle =(e)=>{
-        const newData = {...data};
-        newData[e.target.id]=e.target.value;
-        setData(newData);
-        console.log(newData);
-    }
-    const submit =(e)=>{
-        e.preventDefault();
-        Axios.post(url,{
-            card:data.card,
-            cardNumber:parseInt(data.cardNumber),
-            state:data.state,
-            country:data.country,
-            mealType:data.mealType
-        })
-        .then(res =>{
-            console.log(res.data);
-        })
-    }
+   
     
     return (
-            <CardContent  onSubmit={(e)=> submit(e)} >
+            <CardContent   >
                 <FormBody>
                     <section >
                             <label for="type">Choose Identification Type</label>
-                            <input onChange={(e)=>handle(e)} id="card" value={data.card} type="text" placeholder="Aadhar Card"/>
-                            <input onChange={(e)=>handle(e)} id="cardNumber" value={data.cardNumber} type="text" placeholder="Enter your 12 digits Aadhar Number" />
+                            <input type="text" placeholder="Aadhar Card"/>
+                            <input type="text" placeholder="Enter your 12 digits Aadhar Number" />
                     </section>
                     <section>
                         <label for="type">State</label>
-                        <input onChange={(e)=>handle(e)} id="state" value={data.state} type="text" placeholder="Maharastra" />
+                        <input type="text" placeholder="Maharastra" />
                     </section>
                     <section>
                             <label for="type">Country</label>
-                            <input onChange={(e)=>handle(e)} id="country" value={data.country} type="text" placeholder="India" />   
+                            <input type="text" placeholder="India" />   
                     </section>
                     <section>
                             <label for="type">Meal Type</label>
-                            <input onChange={(e)=>handle(e)} id="mealType" value={data.mealType} type="text" placeholder="Choose Meal Type" />
+                            <input  type="text" placeholder="Choose Meal Type" />
                     </section>
                 </FormBody>
                
